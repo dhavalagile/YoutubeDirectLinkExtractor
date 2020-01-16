@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		172BB75E23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */; };
+		172BB75F23D0DAF100A16D3A /* PlayerResponseLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */; };
+		172BB76023D0DAF100A16D3A /* PlayerResponseLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */; };
 		52D6D9871BEFF229002C0205 /* YoutubeDirectLinkExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* YoutubeDirectLinkExtractor.framework */; };
 		8933C7851EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift */; };
 		8933C7861EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift */; };
@@ -512,6 +514,7 @@
 				B02EF697204C2EDE002A045E /* Array+SafeSubscript.swift in Sources */,
 				B02AB9DF204DB9110082690F /* VideoInfo.swift in Sources */,
 				B02EF692204BF0CF002A045E /* String+Components.swift in Sources */,
+				172BB76023D0DAF100A16D3A /* PlayerResponseLinkExtractor.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +528,7 @@
 				B02EF695204C2EDE002A045E /* Array+SafeSubscript.swift in Sources */,
 				B02AB9DD204DB9110082690F /* VideoInfo.swift in Sources */,
 				B02EF690204BF0CF002A045E /* String+Components.swift in Sources */,
+				172BB75F23D0DAF100A16D3A /* PlayerResponseLinkExtractor.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
