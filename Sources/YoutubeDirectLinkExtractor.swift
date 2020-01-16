@@ -77,16 +77,24 @@ public class YoutubeDirectLinkExtractor {
     
     func extractInfo(from string: String) -> ([[String: String]], Swift.Error?) {
         let pairs = string.queryComponents()
-        
-        guard let fmtStreamMap = pairs["url_encoded_fmt_stream_map"],
-        !fmtStreamMap.isEmpty else {
+
+        if let fmtStreamMap = pairs["url_encoded_fmt_stream_map"],
+            !fmtStreamMap.isEmpty {
+
+            let fmtStreamMapComponents = fmtStreamMap.components(separatedBy: ",")
+            let infoPerPreset = fmtStreamMapComponents.map { $0.queryComponents() }
+            return (infoPerPreset, nil)
+
+        } else if let playerResponseMap = pairs["player_response"] {
+            do {
+                let links = try PlayerResponseLinkExtractor.extractLinks(from: playerResponseMap)
+                return (links, nil)
+            } catch let error {
+                return ([], error)
+            }
+        } else {
             let error = YoutubeError(errorDescription: pairs["reason"])
             return ([], error ?? Error.cantExtractFmtStreamMap)
         }
-        
-        let fmtStreamMapComponents = fmtStreamMap.components(separatedBy: ",")
-        
-        let infoPerPreset = fmtStreamMapComponents.map { $0.queryComponents() }
-        return (infoPerPreset, nil)
     }
 }

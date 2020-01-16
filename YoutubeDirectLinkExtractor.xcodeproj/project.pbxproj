@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172BB75E23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */; };
 		52D6D9871BEFF229002C0205 /* YoutubeDirectLinkExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* YoutubeDirectLinkExtractor.framework */; };
 		8933C7851EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift */; };
 		8933C7861EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerResponseLinkExtractor.swift; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* YoutubeDirectLinkExtractor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoutubeDirectLinkExtractor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* YoutubeDirectLinkExtractor-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YoutubeDirectLinkExtractor-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* YoutubeDirectLinkExtractor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoutubeDirectLinkExtractor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				B03ABD79204C5DBB007C74A3 /* ExtractionSource.swift */,
 				B02AB9DB204DB9110082690F /* VideoInfo.swift */,
 				B03ABD74204C5D59007C74A3 /* Errors.swift */,
+				172BB75D23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 52D6D9721BEFF229002C0205;
@@ -484,6 +488,7 @@
 				B02EF694204C2EDE002A045E /* Array+SafeSubscript.swift in Sources */,
 				B02AB9DC204DB9110082690F /* VideoInfo.swift in Sources */,
 				B02EF68F204BF0CF002A045E /* String+Components.swift in Sources */,
+				172BB75E23D0CE1E00A16D3A /* PlayerResponseLinkExtractor.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* YoutubeDirectLinkExtractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
